@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DRH-fo-HHg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="hw10SolarSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="starsBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Zdi-OK-Ax1">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="896" id="6ox-kH-sNG"/>
+                                    <constraint firstAttribute="width" constant="414" id="hGW-D3-iin"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfO-Wo-fG4">
+                                <rect key="frame" x="20" y="468" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="EsG-P2-p77"/>
+                                    <constraint firstAttribute="width" constant="100" id="xsE-aP-DUv"/>
+                                </constraints>
+                                <state key="normal" image="mars"/>
+                                <connections>
+                                    <action selector="planetButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vIA-6j-WAQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ze-40-jzg">
+                                <rect key="frame" x="157" y="468" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="XTR-Wt-n8C"/>
+                                    <constraint firstAttribute="height" constant="100" id="pWc-zg-mq0"/>
+                                </constraints>
+                                <state key="normal" image="jupiter"/>
+                                <connections>
+                                    <action selector="planetButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Obr-Vt-7qf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIJ-3w-hcq">
+                                <rect key="frame" x="294" y="468" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="chB-ts-BUG"/>
+                                    <constraint firstAttribute="height" constant="100" id="e4N-hZ-IOi"/>
+                                </constraints>
+                                <state key="normal" image="saturn"/>
+                                <connections>
+                                    <action selector="planetButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GPw-jr-fTc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0c-cr-fps">
+                                <rect key="frame" x="20" y="657" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="mvG-SJ-iQe"/>
+                                    <constraint firstAttribute="width" constant="100" id="vXH-rq-gQ5"/>
+                                </constraints>
+                                <state key="normal" image="uranus"/>
+                                <connections>
+                                    <action selector="planetButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vds-6W-JhW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9a-IP-Fpo">
+                                <rect key="frame" x="157" y="657" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="4ua-Pn-2gM"/>
+                                    <constraint firstAttribute="width" constant="100" id="KTc-aY-AqX"/>
+                                </constraints>
+                                <state key="normal" image="neptune"/>
+                                <connections>
+                                    <action selector="planetButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bM0-mf-cdd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7k-Ib-0Fh">
+                                <rect key="frame" x="294" y="657" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ikw-7D-wGy"/>
+                                    <constraint firstAttribute="height" constant="100" id="z4T-JB-AGv"/>
+                                </constraints>
+                                <state key="normal" image="pluto"/>
+                                <connections>
+                                    <action selector="planetButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tTD-gX-a3t"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HtT-qY-sZd">
+                                <rect key="frame" x="51" y="439" width="38" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jupiter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWI-xP-bZf">
+                                <rect key="frame" x="180" y="439" width="54" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uranus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKq-Rx-vTD">
+                                <rect key="frame" x="43" y="628" width="55" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neptune" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1QZ-lZ-Kqo">
+                                <rect key="frame" x="174" y="628" width="66" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pluto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXE-qY-OiR">
+                                <rect key="frame" x="324" y="628" width="40" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solar system" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OpD-Ug-15c">
+                                <rect key="frame" x="77" y="148" width="260" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saturn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zT2-zV-odH">
+                                <rect key="frame" x="319" y="439" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XH9-Ax-aoq">
+                                <rect key="frame" x="20" y="279" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="QAW-Vh-Mcv"/>
+                                    <constraint firstAttribute="height" constant="100" id="egX-Jw-p0w"/>
+                                </constraints>
+                                <state key="normal" image="mercury"/>
+                                <connections>
+                                    <action selector="planetButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="prl-yf-0yQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5c-q7-fNa">
+                                <rect key="frame" x="157" y="279" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="5C1-nK-dAU"/>
+                                    <constraint firstAttribute="width" constant="100" id="EFB-YO-XzH"/>
+                                </constraints>
+                                <state key="normal" image="venus"/>
+                                <connections>
+                                    <action selector="planetButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wQ3-Ga-T6Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0D2-fa-vjE">
+                                <rect key="frame" x="294" y="279" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="2RX-Mt-hfg"/>
+                                    <constraint firstAttribute="width" constant="100" id="X7v-Mh-yWi"/>
+                                </constraints>
+                                <state key="normal" image="earth"/>
+                                <connections>
+                                    <action selector="planetButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TvP-1Z-pDc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mercury" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0n-dZ-JSa">
+                                <rect key="frame" x="38" y="250" width="64" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="J6L-Wb-Bef"/>
+                                    <constraint firstAttribute="height" constant="21" id="sYf-us-bAC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Venus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldY-OQ-82e">
+                                <rect key="frame" x="183" y="250" width="48" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Earth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ZD-xi-Ggt">
+                                <rect key="frame" x="321" y="250" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PWI-xP-bZf" firstAttribute="leading" secondItem="HtT-qY-sZd" secondAttribute="trailing" constant="91" id="0XB-lg-yQT"/>
+                            <constraint firstItem="i7k-Ib-0Fh" firstAttribute="leading" secondItem="S9a-IP-Fpo" secondAttribute="trailing" constant="37" id="0qE-yf-j2v"/>
+                            <constraint firstItem="JXE-qY-OiR" firstAttribute="leading" secondItem="1QZ-lZ-Kqo" secondAttribute="trailing" constant="84" id="1C2-EC-N9D"/>
+                            <constraint firstItem="1QZ-lZ-Kqo" firstAttribute="leading" secondItem="pKq-Rx-vTD" secondAttribute="trailing" constant="76" id="1Ql-Ng-VPL"/>
+                            <constraint firstItem="0D2-fa-vjE" firstAttribute="top" secondItem="4ZD-xi-Ggt" secondAttribute="bottom" constant="8" id="1Yk-0N-68i"/>
+                            <constraint firstItem="g0n-dZ-JSa" firstAttribute="top" secondItem="OpD-Ug-15c" secondAttribute="bottom" constant="60" id="4WA-Ps-hQV"/>
+                            <constraint firstItem="JXE-qY-OiR" firstAttribute="top" secondItem="dIJ-3w-hcq" secondAttribute="bottom" constant="60" id="866-l8-4zl"/>
+                            <constraint firstItem="dIJ-3w-hcq" firstAttribute="leading" secondItem="3ze-40-jzg" secondAttribute="trailing" constant="37" id="A43-bd-Gb1"/>
+                            <constraint firstItem="pKq-Rx-vTD" firstAttribute="top" secondItem="QfO-Wo-fG4" secondAttribute="bottom" constant="60" id="Aly-w2-4Zk"/>
+                            <constraint firstItem="S9a-IP-Fpo" firstAttribute="top" secondItem="1QZ-lZ-Kqo" secondAttribute="bottom" constant="8" id="BRM-BJ-h4c"/>
+                            <constraint firstItem="ldY-OQ-82e" firstAttribute="top" secondItem="OpD-Ug-15c" secondAttribute="bottom" constant="60" id="C6B-0A-MzL"/>
+                            <constraint firstItem="g0n-dZ-JSa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="Coy-ds-ri3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0D2-fa-vjE" secondAttribute="trailing" constant="20" id="E6d-vu-Y6w"/>
+                            <constraint firstItem="zT2-zV-odH" firstAttribute="leading" secondItem="PWI-xP-bZf" secondAttribute="trailing" constant="85" id="FFK-EC-GDV"/>
+                            <constraint firstItem="dIJ-3w-hcq" firstAttribute="leading" secondItem="3ze-40-jzg" secondAttribute="trailing" constant="37" id="HKJ-0z-4Ws"/>
+                            <constraint firstItem="4ZD-xi-Ggt" firstAttribute="leading" secondItem="ldY-OQ-82e" secondAttribute="trailing" constant="90" id="IZp-a7-owg"/>
+                            <constraint firstItem="dIJ-3w-hcq" firstAttribute="top" secondItem="zT2-zV-odH" secondAttribute="bottom" constant="8" id="KWR-qg-aUO"/>
+                            <constraint firstItem="OpD-Ug-15c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="Mp3-nF-qqb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OpD-Ug-15c" secondAttribute="trailing" constant="77" id="Nj3-dc-LQH"/>
+                            <constraint firstItem="pKq-Rx-vTD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="NnR-Fb-veT"/>
+                            <constraint firstItem="3ze-40-jzg" firstAttribute="leading" secondItem="QfO-Wo-fG4" secondAttribute="trailing" constant="37" id="PDO-Dt-1UT"/>
+                            <constraint firstItem="HtT-qY-sZd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="RFU-O0-zfX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zT2-zV-odH" secondAttribute="trailing" constant="44" id="UBp-pY-MND"/>
+                            <constraint firstItem="K0c-cr-fps" firstAttribute="top" secondItem="pKq-Rx-vTD" secondAttribute="bottom" constant="8" id="Vzz-gl-0bI"/>
+                            <constraint firstItem="0D2-fa-vjE" firstAttribute="leading" secondItem="Y5c-q7-fNa" secondAttribute="trailing" constant="37" id="Wwb-VF-ynY"/>
+                            <constraint firstItem="1QZ-lZ-Kqo" firstAttribute="top" secondItem="3ze-40-jzg" secondAttribute="bottom" constant="60" id="Wye-ok-Uz9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dIJ-3w-hcq" secondAttribute="trailing" constant="20" id="X1n-fS-RuP"/>
+                            <constraint firstItem="QfO-Wo-fG4" firstAttribute="top" secondItem="HtT-qY-sZd" secondAttribute="bottom" constant="8" id="fU2-vh-Ngf"/>
+                            <constraint firstItem="OpD-Ug-15c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="goh-zt-nGJ"/>
+                            <constraint firstItem="QfO-Wo-fG4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gqU-KP-qAG"/>
+                            <constraint firstItem="HtT-qY-sZd" firstAttribute="top" secondItem="XH9-Ax-aoq" secondAttribute="bottom" constant="60" id="hDf-ZF-Ca1"/>
+                            <constraint firstItem="zT2-zV-odH" firstAttribute="top" secondItem="0D2-fa-vjE" secondAttribute="bottom" constant="60" id="kN7-PG-QHz"/>
+                            <constraint firstItem="i7k-Ib-0Fh" firstAttribute="top" secondItem="JXE-qY-OiR" secondAttribute="bottom" constant="8" id="l9Y-fK-x5U"/>
+                            <constraint firstItem="K0c-cr-fps" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lzH-L6-CWs"/>
+                            <constraint firstItem="PWI-xP-bZf" firstAttribute="top" secondItem="Y5c-q7-fNa" secondAttribute="bottom" constant="60" id="mY9-hI-0xp"/>
+                            <constraint firstItem="S9a-IP-Fpo" firstAttribute="leading" secondItem="K0c-cr-fps" secondAttribute="trailing" constant="37" id="oLN-MG-b2o"/>
+                            <constraint firstItem="ldY-OQ-82e" firstAttribute="leading" secondItem="g0n-dZ-JSa" secondAttribute="trailing" constant="81" id="q8b-vC-puh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i7k-Ib-0Fh" secondAttribute="trailing" constant="20" id="qGF-lU-Q2k"/>
+                            <constraint firstItem="Y5c-q7-fNa" firstAttribute="top" secondItem="ldY-OQ-82e" secondAttribute="bottom" constant="8" id="qrp-Lc-uUP"/>
+                            <constraint firstItem="XH9-Ax-aoq" firstAttribute="top" secondItem="g0n-dZ-JSa" secondAttribute="bottom" constant="8" id="rbQ-nW-0OV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4ZD-xi-Ggt" secondAttribute="trailing" constant="47" id="rdU-KK-mLn"/>
+                            <constraint firstItem="3ze-40-jzg" firstAttribute="top" secondItem="PWI-xP-bZf" secondAttribute="bottom" constant="8" id="uAd-Sr-ncH"/>
+                            <constraint firstItem="Y5c-q7-fNa" firstAttribute="leading" secondItem="XH9-Ax-aoq" secondAttribute="trailing" constant="37" id="wCG-Ts-HMe"/>
+                            <constraint firstItem="4ZD-xi-Ggt" firstAttribute="top" secondItem="OpD-Ug-15c" secondAttribute="bottom" constant="60" id="xA7-rR-xTn"/>
+                            <constraint firstItem="XH9-Ax-aoq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xjX-6u-jKc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JXE-qY-OiR" secondAttribute="trailing" constant="50" id="ycb-vU-2eD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3Go-E1-7Oo"/>
+                    <connections>
+                        <outletCollection property="planetButtonOutlet" destination="XH9-Ax-aoq" collectionClass="NSMutableArray" id="jfm-qm-LDy"/>
+                        <outletCollection property="planetButtonOutlet" destination="Y5c-q7-fNa" collectionClass="NSMutableArray" id="7Rq-tD-SkL"/>
+                        <outletCollection property="planetButtonOutlet" destination="0D2-fa-vjE" collectionClass="NSMutableArray" id="Qac-1R-AVE"/>
+                        <outletCollection property="planetButtonOutlet" destination="QfO-Wo-fG4" collectionClass="NSMutableArray" id="T98-4H-b86"/>
+                        <outletCollection property="planetButtonOutlet" destination="3ze-40-jzg" collectionClass="NSMutableArray" id="M5o-YO-5W0"/>
+                        <outletCollection property="planetButtonOutlet" destination="dIJ-3w-hcq" collectionClass="NSMutableArray" id="yav-3E-PCi"/>
+                        <outletCollection property="planetButtonOutlet" destination="K0c-cr-fps" collectionClass="NSMutableArray" id="D2Y-Og-Uc4"/>
+                        <outletCollection property="planetButtonOutlet" destination="S9a-IP-Fpo" collectionClass="NSMutableArray" id="JVj-4l-9t0"/>
+                        <outletCollection property="planetButtonOutlet" destination="i7k-Ib-0Fh" collectionClass="NSMutableArray" id="IDg-2F-tU9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="116.51785714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KA0-8l-g7x">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DRH-fo-HHg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2gw-XQ-vQX">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZBq-e7-Wow"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ee5-WE-60l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="earth" width="800" height="790"/>
+        <image name="jupiter" width="512" height="512"/>
+        <image name="mars" width="269" height="269"/>
+        <image name="mercury" width="903" height="884"/>
+        <image name="neptune" width="512" height="504"/>
+        <image name="pluto" width="875" height="871"/>
+        <image name="saturn" width="911" height="909"/>
+        <image name="starsBackground" width="2160" height="3840"/>
+        <image name="uranus" width="2000" height="2000"/>
+        <image name="venus" width="800" height="800"/>
+    </resources>
+</document>
